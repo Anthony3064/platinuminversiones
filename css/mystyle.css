@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-.header-container {
+.navbar {
     width: 100%;
     background-color: #D29C3D;
     /*background: linear-gradient(#271805, #341E0B);
@@ -11,7 +11,7 @@
     background: linear-gradient(90deg, rgba(8, 3, 1, 1) 0%, rgba(105, 62, 10, 1) 94%, rgba(111, 68, 16, 1) 97%);*/
 }
 
-.header-container-items {
+.navbar-container {
     width: 70%;
     margin: 0 auto;
     padding: 5px;
@@ -23,42 +23,42 @@
     justify-content: space-between;
 }
 
-.header-icon {
+.navbar-icon {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
     background: linear-gradient(rgb(199, 117, 11), rgb(170, 102, 0));
 }
 
-.header-menu {
+.navbar-menu {
     list-style: none;
 }
 
-.header-menu li {
+.navbar-menu li {
     display: inline-block;
     margin: 5px 0;
 }
 
-.header-menu a {
+.navbar-menu a {
     color: #fff;
     text-decoration: none;
     padding: 3px;
     transition: 0.3s;
 }
 
-.header-menu a:hover {
+.navbar-menu a:hover {
     background: #C17208;
     border: #fff solid 1px;
     border-radius: 5px;
 }
 
-.header-menu a.active:hover {
+.navbar-menu a.active:hover {
     background: #C17208;
     border: #fff solid 1px;
     border-radius: 5px;
 }
 
-.header-menu a.active {
+.navbar-menu a.active {
     border: #fff solid 1px;
     border-radius: 5px;
     background: rgba(255, 255, 0, 0);
@@ -142,7 +142,7 @@
     background-color: #000;
 }
 
-.slide-text p {
+.slide-text h1 {
     width: 70%;
     text-align: left;
     margin: 0 auto;
