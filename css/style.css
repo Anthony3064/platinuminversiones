@@ -25,7 +25,7 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
-    max-width: 992px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -83,28 +83,28 @@ body {
     display: none;
 }
 
-@media (max-width: 935px) {
+@media (max-width: 950px) {
     .logo {
         font-size: 25px;
         transition: 0.3s;
     }
 }
 
-@media (max-width: 885px) {
+@media (max-width: 900px) {
     .logo {
         font-size: 20px;
         transition: 0.3s;
     }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 850px) {
     .logo {
         font-size: 18px;
         transition: 0.3s;
     }
 }
 
-@media (max-width: 815px) {
+@media (max-width: 830px) {
 
     body {
         margin-top: 60px;
@@ -279,7 +279,7 @@ body {
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 355px) {
     .slide-text h1 {
         font-size: 18px;
         transition: 0.5s;
@@ -319,7 +319,7 @@ body {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 355px) {
     .logo-text {
         display: none;
     }
@@ -333,19 +333,18 @@ body {
 .article-brokers {
     display: flex;
     justify-content: space-between;
-    max-width: 992px;
+    max-width: 1200px;
     flex-direction: column;
     margin: 0 auto;
 }
 
-.brokers-container-title {
+.brokers-container-text {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
-    height: 150px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .brokers-title {
@@ -353,21 +352,49 @@ body {
     font-weight: bold;
     text-shadow: 0 0 3px #c1af08f8, 0 0 5px #c17108f8;
     text-align: center;
-}
-
-.brokers-container-content {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
+    padding: 10px;
+}
+
+.brokers-description {
+    color: #000;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.brokers-container-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center ;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 15px;
 }
 
 .brokers-container-content img {
     border-radius: 10px;
 }
 
-.card{
-    
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: solid 3px #000;
+    border-radius: 10px;
+}
+
+.card p{
+    width: 300px;
+
 }
