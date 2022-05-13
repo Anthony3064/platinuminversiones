@@ -28,11 +28,12 @@
         <nav class="nav">
             <a href="#" class="logo nav-link">
                 <div class="logo-container">
-                    <img src="./public/icons/platinuminversiones_icon.png" alt="platinuminversiones_icon.png" width="60"
-                        height="60">
-                    <h4 class="logo-text">
-                        Platinum Inversiones
-                    </h4>
+                    <img class="logo-img" src="./public/icons/platinuminversiones_icon.png"
+                        alt="icon-platinuminversiones">
+                    <label class="logo-text">
+                        Platinum
+                        Inversiones
+                        <label>
                 </div>
             </a>
 
@@ -55,43 +56,45 @@
     </header>
 
     <section class="slideshow-container">
-        <div>
-            <div class="mySlides fade">
-                <div class="slide-text">
-                    <h1>Somos un fondo de inversión que entrega rendimientos mayor a cualquier banco.</h1>
-                </div>
-                <img
-                    src="https://image.shutterstock.com/image-illustration/smartphone-bitcoin-symbol-onscreen-among-600w-703957714.jpg">
+
+        <div class="mySlides fade">
+            <div class="slide-text">
+                <h1>Somos un fondo de inversión que entrega rendimientos mayor a cualquier banco.</h1>
             </div>
-            <div class="mySlides fade">
-                <div class="slide-text">
-                    <h1><span class="slide-text-span">Diversifique su capital con nosotros en activos como:</span>
-                        divisas,
-                        oro,
-                        plata, petróleo,
-                        criptomonedas.</h1>
-                </div>
-                <img
-                    src="https://image.shutterstock.com/image-illustration/smartphone-bitcoin-symbol-onscreen-among-600w-703957714.jpg">
-            </div>
-            <div class="mySlides fade">
-                <div class="slide-text">
-                    <h1>Ten tu dinero seguro con nosotros, no ponemos tu capital en riesgo, lo ponemos en activos
-                        probados
-                        por
-                        años que generan ganancias.</h1>
-                </div>
-                <img
-                    src="https://image.shutterstock.com/image-illustration/smartphone-bitcoin-symbol-onscreen-among-600w-703957714.jpg">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div style="text-align:center; background-color: aliceblue;">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
+            <figure class="slide-image-container">
+                <img src="./public/images/PLATINUM__DISENNO1-1200x400.jpg"
+                    alt="platinum inversiones - barras y lingotes de oro">
+            </figure>
         </div>
+        <div class="mySlides fade">
+            <div class="slide-text">
+                <h1><span class="slide-text-span">Diversifique su capital con nosotros en activos como:</span>
+                    divisas,
+                    oro,
+                    plata, petróleo,
+                    criptomonedas.</h1>
+            </div>
+            <figure class="slide-image-container">
+                <img src="./public/images/PLATINUM__DISENNO3-1200x400.jpg"
+                    alt="platinum inversiones - monedas de plata">
+            </figure>
+
+        </div>
+        <div class="mySlides fade">
+            <div class="slide-text">
+                <h1>Ten tu dinero seguro con nosotros, no ponemos tu capital en riesgo, lo ponemos en activos
+                    probados
+                    por
+                    años que generan ganancias.</h1>
+            </div>
+            <figure class="slide-image-container">
+                <img src="./public/images/PLATINUM__DISENNO4-1200X400.jpg"
+                    alt="platinum inversiones - logo y moneda bitcoin">
+            </figure>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     </section>
 
     <section class="brokers-section">
@@ -106,70 +109,50 @@
 
             <div class="brokers-container-content">
                 <div class="card">
-                    <img src="https://image.shutterstock.com/image-illustration/smartphone-bitcoin-symbol-onscreen-among-600w-703957714.jpg"
-                        width="300" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore distinctio nemo suscipit delectus. Molestias at quas expedita voluptatum sunt quibusdam tempora officiis in ipsam assumenda fuga, beatae praesentium modi.</p>
+                    <figure class="card-img-container">
+                        <img class="card-img" src="./public/images/brokers/ameritrade-icon.png"
+                            alt="ameritrade-icon.png" />
+                        <figcaption class="card-img-caption">TD Ameritrade</figcaption>
+                    </figure>
                 </div>
-
                 <div class="card">
-                    <img src="https://image.shutterstock.com/image-illustration/smartphone-bitcoin-symbol-onscreen-among-600w-703957714.jpg"
-                        width="300" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore distinctio nemo suscipit delectus. Molestias at quas expedita voluptatum sunt quibusdam tempora officiis in ipsam assumenda fuga, beatae praesentium modi.</p>
+                    <figure class="card-img-container">
+                        <img class="card-img" src="./public/images/brokers/avatrade-icon.jpg"
+                            alt="ameritrade-icon.png" />
+                        <figcaption class="card-img-caption">Ava Trade</figcaption>
+                    </figure>
                 </div>
-
                 <div class="card">
-                    <img src="https://image.shutterstock.com/image-illustration/smartphone-bitcoin-symbol-onscreen-among-600w-703957714.jpg"
-                        width="300" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore distinctio nemo suscipit delectus. Molestias at quas expedita voluptatum sunt quibusdam tempora officiis in ipsam assumenda fuga, beatae praesentium modi.</p>
+                    <figure class="card-img-container">
+                        <img class="card-img" src="./public/images/brokers/fxwinning-icon.jpg"
+                            alt="ameritrade-icon.png" />
+                        <figcaption class="card-img-caption">FXWINNING</figcaption>
+                    </figure>
                 </div>
-
+                <div class="card">
+                    <figure class="card-img-container">
+                        <img class="card-img" src="./public/images/brokers/xm-icon.jpg"
+                            alt="ameritrade-icon.png" />
+                        <figcaption class="card-img-caption">XM</figcaption>
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure class="card-img-container">
+                        <img class="card-img" src="./public/images/brokers/icmarkets-icon.jpg"
+                            alt="ameritrade-icon.png" />
+                        <figcaption class="card-img-caption">IC Markets</figcaption>
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure class="card-img-container">
+                        <img class="card-img" src="./public/images/brokers/binance-icon.jpg"
+                            alt="ameritrade-icon.png" />
+                        <figcaption class="card-img-caption">Binance</figcaption>
+                    </figure>
+                </div>
             </div>
         </article>
     </section>
-
-    <!--<section class="slideshow-container">
-        <article>
-            <div class="mySlides fade">
-                <div class="slide-text">
-                    <h1>Somos un fondo de inversión que entrega rendimientos mayor a cualquier banco.</h1>
-                </div>
-                <img
-                    src="https://image.shutterstock.com/image-illustration/smartphone-bitcoin-symbol-onscreen-among-600w-703957714.jpg">
-            </div>
-            <div class="mySlides fade">
-                <div class="slide-text">
-                    <h1><span class="slide-text-span">Diversifique su capital con nosotros en activos como:</span>
-                        divisas,
-                        oro,
-                        plata, petróleo,
-                        criptomonedas.</h1>
-                </div>
-                <img
-                    src="https://image.shutterstock.com/image-illustration/smartphone-bitcoin-symbol-onscreen-among-600w-703957714.jpg">
-            </div>
-            <div class="mySlides fade">
-                <div class="slide-text">
-                    <h1>Ten tu dinero seguro con nosotros, no ponemos tu capital en riesgo, lo ponemos en activos
-                        probados
-                        por
-                        años que generan ganancias.</h1>
-                </div>
-                <img
-                    src="https://image.shutterstock.com/image-illustration/smartphone-bitcoin-symbol-onscreen-among-600w-703957714.jpg">
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </article>
-    </section>
-
-    <section>
-        <h1>Brokers Regulados con los que trabajamos</h1>
-    </section>-->
 
 </body>
 
