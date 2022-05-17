@@ -1,0 +1,29 @@
+:root {
+    --theme-color: #fff;
+    --primary-color: #C17208;
+    --secundary-color: #9c510b;
+    --text-color: #000;
+    --text-inverse-color: #fff;
+    --text-background-color: #C17208;
+    
+    /*Mobile*/
+    --text-active-mobile-color: #ffc400;
+    --background-nav-menu: #c17108f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana, sans-serif;
+    padding: 80px 0 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        padding: 60px 0 0 0;
+    }
+}

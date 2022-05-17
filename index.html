@@ -13,12 +13,15 @@
     <link rel="icon" href="./public/icons/platinuminversiones_icon.png" />
 
     <!--Style sheet-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav-style.css">
+    <link rel="stylesheet" href="./css/slides-section.css">
+    <link rel="stylesheet" href="./css/brokers-section.css">
     <link rel="stylesheet" href="./public/icons/fontawesome-icons/css/all.css">
 
     <!--Javascript-->
     <script defer src="./js/header.js"></script>
-    <script defer src="./js/carousel.js"></script>
+    <script defer src="./js/slides.js"></script>
 
 </head>
 
@@ -27,14 +30,17 @@
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo nav-link">
-                <div class="logo-container">
+
+                <figure class="logo-container-img">
                     <img class="logo-img" src="./public/icons/platinuminversiones_icon.png"
-                        alt="icon-platinuminversiones">
-                    <label class="logo-text">
-                        Platinum
-                        Inversiones
-                        <label>
+                        alt="Logo de Platinum Inversiones">
+                </figure>
+
+                <div class="logo-text">
+                    Platinum
+                    Inversiones
                 </div>
+
             </a>
 
             <button class="nav-toggle" aria-label="Abrir menú">
@@ -55,46 +61,37 @@
         </nav>
     </header>
 
-    <section class="slideshow-container">
-
-        <div class="mySlides fade">
-            <div class="slide-text">
-                <h1>Somos un fondo de inversión que entrega rendimientos mayor a cualquier banco.</h1>
+    <section class="slide-section">
+        <div class="slide-section-container">
+            <div class="slide-item fade active">
+                <img class="slide-item-image" src="./public/images/PLATINUM__DISENNO1-1200x400.jpg"
+                    alt="barras y lingotes de oro">
+                <h2 class="slide-item-description">Somos un fondo de inversión que entrega rendimientos mayor a
+                    cualquier banco.</h2>
             </div>
-            <figure class="slide-image-container">
-                <img src="./public/images/PLATINUM__DISENNO1-1200x400.jpg"
-                    alt="platinum inversiones - barras y lingotes de oro">
-            </figure>
-        </div>
-        <div class="mySlides fade">
-            <div class="slide-text">
-                <h1><span class="slide-text-span">Diversifique su capital con nosotros en activos como:</span>
+            <div class="slide-item fade">
+                <img class="slide-item-image" src="./public/images/PLATINUM__DISENNO3-1200x400.jpg"
+                    alt="Monedas de plata">
+                <h2 class="slide-item-description">Diversifique su capital con nosotros en activos
+                    como:
                     divisas,
                     oro,
                     plata, petróleo,
-                    criptomonedas.</h1>
+                    criptomonedas.</h2>
             </div>
-            <figure class="slide-image-container">
-                <img src="./public/images/PLATINUM__DISENNO3-1200x400.jpg"
-                    alt="platinum inversiones - monedas de plata">
-            </figure>
-
-        </div>
-        <div class="mySlides fade">
-            <div class="slide-text">
-                <h1>Ten tu dinero seguro con nosotros, no ponemos tu capital en riesgo, lo ponemos en activos
+            <div class="slide-item fade">
+                <img class="slide-item-image" src="./public/images/PLATINUM__DISENNO4-1200X400.jpg"
+                    alt="Logo de Platinum Inversiones y moneda bitcoin">
+                <h2 class="slide-item-description">Ten tu dinero seguro con nosotros, no ponemos tu capital en riesgo,
+                    lo ponemos en activos
                     probados
                     por
-                    años que generan ganancias.</h1>
+                    años que generan ganancias.</h2>
             </div>
-            <figure class="slide-image-container">
-                <img src="./public/images/PLATINUM__DISENNO4-1200X400.jpg"
-                    alt="platinum inversiones - logo y moneda bitcoin">
-            </figure>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
     </section>
 
     <section class="brokers-section">
@@ -131,8 +128,7 @@
                 </div>
                 <div class="card">
                     <figure class="card-img-container">
-                        <img class="card-img" src="./public/images/brokers/xm-icon.jpg"
-                            alt="ameritrade-icon.png" />
+                        <img class="card-img" src="./public/images/brokers/xm-icon.jpg" alt="ameritrade-icon.png" />
                         <figcaption class="card-img-caption">XM</figcaption>
                     </figure>
                 </div>
@@ -150,6 +146,20 @@
                         <figcaption class="card-img-caption">Binance</figcaption>
                     </figure>
                 </div>
+            </div>
+        </article>
+    </section>
+    <section class="services-section">
+        <article class="services-article">
+            <div class="services-title">
+                Servicios
+            </div>
+            <div class="services-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ex omnis hic odit. Nostrum ut optio vitae sit. Voluptatum quis pariatur rerum hic nam neque eos quas libero consequuntur vel!
+                Harum incidunt nobis eaque voluptatem commodi doloribus modi ad hic aperiam, cumque vel animi perferendis eius temporibus veniam iusto, repellendus culpa corrupti dignissimos quam! Voluptatem necessitatibus fuga quibusdam assumenda cum!
+                Nulla ipsam distinctio natus a officia, quos consequatur, cum molestias earum voluptates sit facilis quo saepe veritatis eaque odio consequuntur aliquam! Quos earum mollitia cupiditate natus alias deleniti facilis impedit.
+                Quasi, aspernatur aperiam minima consectetur mollitia cupiditate saepe ut ex culpa error officia beatae ipsum aut, provident explicabo nesciunt adipisci, similique distinctio vel excepturi optio incidunt. Earum hic aliquid impedit?
+                Perspiciatis, distinctio doloribus nam, molestiae sunt magnam suscipit cupiditate aliquam recusandae quae nesciunt eos illo consequatur adipisci corporis vel amet sint earum enim dolor itaque fugiat temporibus sit? Voluptatem, ullam.
             </div>
         </article>
     </section>
