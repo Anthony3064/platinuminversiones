@@ -2,7 +2,7 @@
 .header {
     width: 100%;
     height: 80px;
-    background: linear-gradient(0deg, rgba(253, 187, 45, 0.5) 0%, rgba(108, 80, 19, 0.6) 100%), url('../public/images/background-gold.jpeg');
+    background: linear-gradient(0deg, #dbcd7069 0%, #6c5013c7 100%), url('../public/images/background-gold.jpeg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: fixed;
@@ -32,7 +32,7 @@
     padding: 0 20px;
 }
 
-.logo-container-img{
+.logo-container-img {
     width: 65px;
     height: 65px;
     display: flex;
@@ -102,7 +102,7 @@
         height: 60px;
     }
 
-    .logo-container-img{
+    .logo-container-img {
         width: 50px;
         height: 50px;
     }
@@ -112,14 +112,14 @@
         height: 45px;
     }
 
-    .logo-text{
+    .logo-text {
         font-size: 22px;
     }
 
     .nav-menu {
         flex-direction: column;
         margin: 0;
-        background-color: var(--background-nav-menu);
+        background-color: var(--backgroud-color-container-deg);
         position: fixed;
         top: 60px;
         left: 0;
@@ -141,7 +141,8 @@
     .nav-menu-link:hover,
     .nav-menu-link_active {
         background: none;
-        color: var(--text-active-mobile-color);
+        color: var(--third-color);
+        font-weight: 500;
         transition: 0.5s;
     }
 
