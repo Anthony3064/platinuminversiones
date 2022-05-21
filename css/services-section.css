@@ -3,7 +3,6 @@
     width: 100%;
 }
 
-
 .services-article {
     width: 100%;
     max-width: 1200px;
@@ -16,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .5em 2em;
+    padding: 0.5em 2em;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -39,7 +38,61 @@
     left: 0;
 }
 
+.services-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
 
+
+.service {
+    width: 350px;
+    height: 350px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    position: relative;
+}
+
+.service-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+.service-title {
+    text-align: center;
+    line-height: 50px;
+}
+
+.service-description-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000af;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 1em;
+    font-size: 26px;
+    color: var(--text-inverse-color);
+    border-radius: 15px;
+    opacity: 0;
+}
+
+.service-description-overlay:hover{
+    opacity: 1;
+    transition: 0.7s;
+}
 
 @media only screen and (max-width: 768px) {
     .brokers-section {
