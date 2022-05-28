@@ -41,13 +41,43 @@
     margin: 5px auto;
 }
 
+.message {
+    border: #ff0000 solid 1px;
+    background: #ff4242;
+    height: 50px;
+    width: 100%;
+    max-width: 1200px;
+    color: var(--text-inverse-color);
+    padding: 0.5em 2em;
+    margin: 0 auto;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 26px;
+    transition: display 0.7s;
+}
+
+.green {
+    border: #00831c solid 1px;
+    background: #2f811e;
+}
+
+.button-close {
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: var(--text-inverse-color);
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
-    .field>input {
+
+    .field>input,
+    .field>label,
+    .message,
+    .button-close {
         font-size: 20px;
     }
 
-    .field>label {
-        font-size: 20px;
-    }
 }

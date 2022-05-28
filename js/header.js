@@ -48,3 +48,9 @@ menuLinks.forEach((menuLink) => {
     }
 
 });
+
+
+const redirectContact = () => {
+    const menuLinkContact = document.querySelector(`.nav-menu a[href="#contact"]`);
+    menuLinkContact.click();
+}
