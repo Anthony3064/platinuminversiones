@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --theme-color: #fff;
     --theme-inverse-color: #000000;
@@ -20,10 +21,8 @@
     --background-nav-menu: #c17108f8;
     --font-roboto: 'Roboto', sans-serif;
     --font-koulen: 'Koulen', 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
-
-
-
 
 * {
     margin: 0;
@@ -34,34 +33,4 @@
 
 body {
     padding: 80px 0 0 0;
-}
-
-
-.button {
-    background: var(--primary-color);
-    color: var(--text-inverse-color);
-    border: none;
-    border-radius: 30px;
-    font-size: 26px;
-    font-weight: 500;
-    padding: 0.8em 1.5em;
-    margin: 0.8em 1.5em;
-    cursor: pointer;
-}
-
-.button:hover {
-    background: linear-gradient(0deg, #dbcd7069 0%, #6c5013c7 100%), url('../public/images/background-gold.jpeg');
-    color: var(--text-inverse-color);
-}
-
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 60px 0 0 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .button {
-        font-size: 20px;
-    }
 }

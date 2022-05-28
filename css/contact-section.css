@@ -1,0 +1,53 @@
+.contact-section {
+    padding: 20px 0;
+    background: var(--theme-inverse-color);
+}
+
+.contact-container {
+    color: var(--text-inverse-color);
+}
+
+.contact-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.field>input {
+    padding: 0.5em 0.5em;
+    font-size: 26px;
+    width: 100%;
+}
+
+.field>label {
+    padding: 0.5em 0.5em;
+    font-size: 26px;
+}
+
+.contact-form .button {
+    width: 300px;
+    max-width: 300px;
+    margin: 5px auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .field>input {
+        font-size: 20px;
+    }
+
+    .field>label {
+        font-size: 20px;
+    }
+}

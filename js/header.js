@@ -18,3 +18,33 @@ navToggle.addEventListener("click", () => {
     }
 
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        const id = entry.target.getAttribute('id');
+        const menuLink = document.querySelector(`.nav-menu a[href="#${id}"]`);
+
+        if (entry.isIntersecting) {
+            document.querySelector('.nav-menu a.nav-menu-link_active').classList.remove('nav-menu-link_active');
+            menuLink.classList.add('nav-menu-link_active');
+        }
+
+    });
+}, { rootMargin: '-30% 0px -70% 0px' });
+
+
+const menuLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+
+menuLinks.forEach((menuLink) => {
+    menuLink.addEventListener('click', () => {
+        navMenu.classList.remove('nav-menu_visible');
+    });
+
+    const hash = menuLink.getAttribute('href');
+    const target = document.querySelector(hash);
+
+    if (target) {
+        observer.observe(target);
+    }
+
+});

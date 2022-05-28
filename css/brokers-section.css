@@ -11,35 +11,6 @@
     color: var(--third-color);
 }
 
-.brokers-title {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .5em 2em;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.brokers-title h1{
-    font-size: 30px;
-    font-weight: bold;
-    font-family: var(--font-koulen);
-    text-align: center;
-    position: relative;
-}
-
-.brokers-title h1::after{
-    content: '';
-    width: 100%;
-    background: var(--primary-color);
-    height: 3px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-
 .brokers-description {
     font-size: 26px;
     font-weight: 500;
@@ -132,7 +103,7 @@
 
 @media only screen and (max-width: 600px) {
 
-    .brokers-title {
+    .title {
         font-size: 24px;
     }
 

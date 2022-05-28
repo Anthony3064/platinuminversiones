@@ -14,14 +14,20 @@
 
     <!--Style sheet-->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/general-styles.css">
     <link rel="stylesheet" href="./css/nav-style.css">
     <link rel="stylesheet" href="./css/slides-section.css">
     <link rel="stylesheet" href="./css/brokers-section.css">
     <link rel="stylesheet" href="./css/services-section.css">
+    <link rel="stylesheet" href="./css/robot-section.css">
+    <link rel="stylesheet" href="./css/bank-section.css">
+    <link rel="stylesheet" href="./css/contact-section.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
     <!--Javascript-->
     <script defer src="./js/header.js"></script>
     <script defer src="./js/slides.js"></script>
+    <script defer src="./js/email.js"></script>
     <script defer src="https://kit.fontawesome.com/5afd1648d3.js" crossorigin="anonymous"></script>
 </head>
 
@@ -30,17 +36,14 @@
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo nav-link">
-
                 <figure class="logo-container-img">
                     <img class="logo-img" src="./public/icons/platinuminversiones_icon.png"
                         alt="Logo de Platinum Inversiones">
                 </figure>
-
                 <div class="logo-text">
                     Platinum
                     Inversiones
                 </div>
-
             </a>
 
             <button class="nav-toggle" aria-label="Abrir menú">
@@ -48,21 +51,22 @@
             </button>
 
             <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link nav-menu-link_active"
+                <li class="nav-menu-item"><a href="#home" class="nav-menu-link nav-link nav-menu-link_active"
                         onclick="changeClass(this)">Inicio</a>
                 </li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link"
-                        onclick="changeClass(this)">Servicios</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link"
+                <li class="nav-menu-item"><a href="#brokers" class="nav-menu-link nav-link"
                         onclick="changeClass(this)">Brokers</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link"
+                <li class="nav-menu-item"><a href="#services" class="nav-menu-link nav-link"
+                        onclick="changeClass(this)">Servicios</a></li>
+
+                <li class="nav-menu-item"><a href="#contact" class="nav-menu-link nav-link"
                         onclick="changeClass(this)">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="slide-section">
-        <div class="slide-section-container">
+    <section class="container slide-section" id="home">
+        <div class="container-section slide-section-container">
             <div class="slide-item fade active">
                 <img class="slide-item-image" src="./public/images/PLATINUM__DISENNO1-1200x400.jpg"
                     alt="barras y lingotes de oro">
@@ -89,16 +93,16 @@
                     años que generan ganancias.</h2>
             </div>
 
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
+            <a class="prev"><i class="fas fa-angle-left"></i></a>
+            <a class="next"><i class="fas fa-angle-right"></i></a>
         </div>
     </section>
 
-    <section class="brokers-section">
+    <section class="container brokers-section" id="brokers">
         <img class="wave" src="./public/images/wave_test.svg" alt="wave">
         <div class="brokers-container">
-            <div class="brokers-title">
-                <h1>Brokers</h1>
+            <div class="title-container">
+                <h1 class="title">Brokers</h1>
             </div>
 
             <p class="brokers-description">
@@ -160,10 +164,10 @@
         <img class="wave bottom" src="./public/images/wave_test.svg" alt="wave">
     </section>
 
-    <section class="services-section">
-        <article class="services-article">
-            <div class="services-title">
-                <h1>
+    <section class="container services-section" id="services">
+        <article class="container-section services-article">
+            <div class="title-container">
+                <h1 class="title">
                     Servicios
                 </h1>
             </div>
@@ -171,63 +175,192 @@
             <div class="services-content">
                 <div class="service">
 
-                    <img class="service-image" src="./public/icons/icons4web-54026.jpeg"
+                    <img class="service-image" src="./public/icons/icons4web-dollar.jpeg"
                         alt="Ícono de moneda con dollar">
 
                     <h3 class="service-title">
                         Inversión en divisas
                     </h3>
-                    <div class="service-description-overlay">
-                        euro, franco suizo, libra
-                        esterlina, yen japonés, que entregan rendimientos superiores.
+                    <div class="description-overlay service-overlay">
+                        Euro, Franco Suizo, Libra
+                        Esterlina, Yen Japonés, que entregan rendimientos superiores.
                     </div>
                 </div>
                 <div class="service">
-                    <img class="service-image" src="./public/icons/icons4web-94262.jpeg" alt="Ícono de gráfica">
+                    <img class="service-image" src="./public/icons/icons4web-chart.jpeg" alt="Ícono de gráfica">
                     <h3 class="service-title">
                         Inversión en Acciones
                     </h3>
-                    <div class="service-description-overlay">
-                        En USA, Europa, China, Apple, Microsoft, Facebook, Tesla o conglomerados de industrias
-                        relacionadas a la
-                        energía, biotecnología, inteligencia artificial y videojuegos.
+                    <div class="description-overlay service-overlay">
+                        <p>
+                            En USA, Europa, China, Apple, Microsoft, Facebook, Tesla o conglomerados
+                            relacionadas a la
+                            energía, biotecnología, inteligencia artificial y videojuegos.
+                        </p>
                     </div>
                 </div>
                 <div class="service">
-                    <img class="service-image" src="./public/icons/icons4web-52628.jpeg"
+                    <img class="service-image" src="./public/icons/icons4web-oil.jpeg"
                         alt="Ícono de barrel de gasolina">
                     <h3 class="service-title">
                         Inversión en Commodities
                     </h3>
-                    <div class="service-description-overlay">
-                        Petroleo, Oro y Plata.
+                    <div class="description-overlay service-overlay">
+                        <p>
+                            Petroleo, Oro y Plata.
+                        </p>
                     </div>
                 </div>
                 <div class="service">
-                    <img class="service-image" src="./public/icons/icons4web-77408.jpeg"
+                    <img class="service-image" src="./public/icons/icons4web-hands.jpeg"
                         alt="Ícono de dos manos con una moneda de dollar en el centro">
                     <h3 class="service-title">
                         Inversión en Índices Bursátiles
                     </h3>
-                    <div class="service-description-overlay">
-                        Diversificamos tu capital en el S&P 500, Nasdaq que son de las mayores empresas en USA.
+                    <div class="description-overlay service-overlay">
+                        <p>
+                            Diversificamos tu capital en el S&P 500, Nasdaq que son de las mayores empresas en USA.
+                        </p>
                     </div>
                 </div>
                 <div class="service">
-                    <img class="service-image" src="./public/icons/icons4web-44793.jpeg"
+                    <img class="service-image" src="./public/icons/icons4web-bitcoin.jpeg"
                         alt="Ícono de moneda con dollar">
                     <h3 class="service-title">
                         Inversión en criptomonedas
                     </h3>
-                    <div class="service-description-overlay">
-                        Bitcoin, ethereum, Dogecoin, Shiba, se invierte en un fondo de alto riesgo
-                        que genera un rendimiento más alto del normal.
+                    <div class="description-overlay service-overlay">
+                        <p>
+                            Bitcoin, ethereum, Dogecoin, Shiba, se invierte en un fondo de alto riesgo
+                            que genera un rendimiento más alto del normal.
+                        </p>
                     </div>
                 </div>
             </div>
-
         </article>
     </section>
+
+    <section class="container robot-section">
+
+        <article class="container-section robot-container">
+
+            <div class="title-container">
+                <h1 class="title">
+                    ¡TRABAJAMOS CON UN ROBOT DE INTELIGENCIA ARTIFICIAL QUE GENERA DINERO TODOS LOS DÍAS!
+                </h1>
+            </div>
+
+            <div class="robot-content">
+
+                <figure class="img-container">
+                    <img class="robot-img" src="./public/images/robot.jpg" alt="Robot pensando">
+
+                    <div class="description-overlay">
+                        <p class="robot-description">
+                            Robot probado por mas de 5 años, que invierten empresas financieras tan grandes como:
+                            JP
+                            Morgan, Morgan Stanley y algunas financieras grandes de USA Y Europa.
+                        </p>
+                    </div>
+
+                </figure>
+
+                <figure class="img-container">
+                    <img class="robot-img" src="./public/images/robot-table.jpg" alt="hombre con tableta">
+
+                    <div class="description-overlay">
+                        <p class="robot-description">
+                            Genera un rendimiento conservador para perfiles de inversionistas que
+                            no
+                            les
+                            gusta el riesgo.
+                        </p>
+                    </div>
+                </figure>
+
+            </div>
+
+        </article>
+
+    </section>
+
+    <section class="container bank">
+        <article class="container-section bank-section">
+            <div class="title-container">
+                <h1 class="title bank-section-title">
+                    TU INVERSIÓN ESTÁ RESPALDADA Y ASEGURADA POR BANCOS COMO: JP MORGAN CHASE, MORGAN
+                    STANLEY, GOLDMAN SACHS.
+                </h1>
+            </div>
+        </article>
+    </section>
+
+    <section class="container contact-section" id="contact">
+        <article class="container-section contact-container">
+            <div class="title-container">
+                <h1 class="title">
+                    Ponte en contacto con nosotros
+                </h1>
+            </div>
+            <form class="contact-form" method="post" action="" enctype="multipart/form-data">
+
+                <div class="field">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre completo" />
+                </div>
+
+                <div class="field">
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" />
+                </div>
+
+                <div class="field">
+                    <label for="phone">Teléfono:</label>
+                    <input type="text" id="phone" name="phone" placeholder="+506 88888888" />
+                </div>
+
+                <div class="field">
+                    <label for="service">Servicio de inversión:</label>
+                    <input type="text" id="service" name="service" placeholder="Servicio de inversión de interés" />
+                </div>
+
+                <button id="contact-button" class="button">Enviar</button>
+
+            </form>
+        </article>
+    </section>
+
+    <footer class="container footer">
+        <div class="container-section footer-content">
+            <div class="social">
+
+                <div class="title-container">
+                    <h1 class="title">
+                        Siguenos en:
+                    </h1>
+                </div>
+
+                <ul class="social-items">
+                    <li class="social-item"><a class="nav-menu-link nav-link" href="#"><i
+                                class="fab fa-facebook-square"></i> </a></li>
+                    <li class="social-item"><a class="nav-menu-link nav-link" href="#"><i
+                                class="fab fa-instagram"></i></a></li>
+                </ul>
+
+                <div class="title-container">
+                    <h1 class="title">
+                        Contacto:
+                    </h1>
+                </div>
+
+                <p class="email-footer"><i class="far fa-envelope"></i> platinuminversionescr@gmail.com</p>
+
+            </div>
+        </div>
+        <div class="credits">
+            <small><i class="far fa-copyright"></i> 2022 Platinum Inversiones Costa Rica</small>
+        </div>
+    </footer>
 
 </body>
 
