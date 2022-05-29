@@ -1,5 +1,5 @@
 .button {
-    background: var(--primary-color);
+    background: var(--text-background-color-brown);
     color: var(--text-inverse-color);
     border: none;
     border-radius: 30px;

@@ -6,7 +6,7 @@
 
 .brokers-container {
     background: var(--backgroud-color-container);
-    color: var(--third-color);
+    color: var(--text-color-brown);
 }
 
 .brokers-description {

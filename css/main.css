@@ -7,13 +7,15 @@
     --primary-color: #C17208;
     --secondary-color: #9c510b;
     --third-color: #5F3E1B;
-
+    
     --text-color: #000;
     --text-inverse-color: #fff;
+    --text-color-brown: #412a12;
 
     --text-background-color: #C17208;
+    --text-background-color-brown: #725a19;
 
-    --backgroud-color-container: #DBCD70;
+    --backgroud-color-container: #AE8930;
     --backgroud-color-container-deg: #dbcd70fd;
 
     /*Mobile*/

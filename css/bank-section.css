@@ -1,4 +1,7 @@
+.bank{
+    background: var(--theme-inverse-color);
+}
 .bank-section{
-    color: var(--third-color);
+    color: var(--text-inverse-color);
     padding: 2em 2em;
 }

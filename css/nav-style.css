@@ -73,7 +73,7 @@
 
 .nav-menu-link:hover,
 .nav-menu-link_active {
-    background: var(--text-background-color);
+    background: var(--text-background-color-brown);
     border-radius: 5px;
     transition: 0.5s;
 }

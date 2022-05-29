@@ -1,10 +1,15 @@
 /*Robot Section*/
 .robot-section {
     padding: 60px 0;
+    background: var(--theme-inverse-color);
 }
 
 .robot-container {
     color: var(--third-color);
+}
+
+.robot-title{
+    color: var(--text-inverse-color);
 }
 
 .robot-content {
@@ -30,7 +35,6 @@
 }
 
 .robot-description {
-
     font-size: 26px;
     font-weight: 500;
 }
