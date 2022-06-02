@@ -55,5 +55,9 @@
 
     .services-description {
         font-size: 20px;
-    }    
+    }
+
+    .service-overlay{
+        font-size: 1em;
+    }
 }

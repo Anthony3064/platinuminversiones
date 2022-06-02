@@ -8,7 +8,7 @@
     color: var(--third-color);
 }
 
-.robot-title{
+.robot-title {
     color: var(--text-inverse-color);
 }
 
@@ -33,6 +33,7 @@
     width: 100%;
     height: 450px;
     border-radius: 10px;
+    position: relative;
 }
 
 .robot-description {
@@ -43,7 +44,7 @@
 @media only screen and (max-width: 600px) {
 
     .robot-img,
-    .img-container{
+    .img-container {
         height: 300px;
     }
 
@@ -53,4 +54,18 @@
         font-weight: 500;
     }
 
+    .banner7 {
+        content: url('../public/images/PLATINUM__BANNER7_MOVIL.jpg');
+    }
+
+    .banner10 {
+        content: url('../public/images/PLATINUM__BANNER10_MOVIL.jpg');
+    }
+
+}
+
+@media only screen and (max-width: 290px) {
+    .robot-description {
+        font-size: 0.5em;
+    }
 }

@@ -10,21 +10,28 @@
 .bank-images {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 0.5rem 1rem;
 }
 
 .bank-img-container {
-    width: 100%;
-    height: 450px;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    position: relative;
 }
 
 .bank-image {
     width: 100%;
     height: 100%;
-    padding: 1em 0;
+    min-width: 260px;
     border-radius: 10px;
 }
