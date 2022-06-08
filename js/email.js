@@ -6,7 +6,7 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const formData = new FormData(form);
-    form.setAttribute('action', 'https://github.com/Anthony3064/platinuminversiones/stmt/sendEmail/send-email.php');
+    form.setAttribute('action', 'https://anthony3064.github.io/platinuminversiones/stmt/sendEmail/send-email.php');
 
     const inputs = form.querySelectorAll('#name, #email, #phone, #service');
     const messageDiv = document.querySelector('.message');
