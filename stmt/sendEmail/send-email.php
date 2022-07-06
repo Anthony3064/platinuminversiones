@@ -8,6 +8,6 @@
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
     
-    header('Location: https://anthony3064.github.io/platinuminversiones/#contact');
+    header('Location: https://platinuminversiones.com/#contact');
     die();
 ?>
